@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-let port = process.IDBEnvironment.PORT || 8080;
+let PORT = process.env.PORT || 3000;
 
 
 app.use(bodyParser.json());
